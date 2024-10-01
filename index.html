@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <div class="tema">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+    </div>
+
+    <form>
+        <h1>Feça seu Cadastro agora</h1>
+        <input type="file" accept="jpeg, png" placeholder="escolha sua foto">
+        <input type="text" placeholder="nome completo">
+        <input type="text" placeholder="email">
+        <input type="password" placeholder="senha">
+        <input type="password" placeholder="confirmar senha">
+        <button type="button" id="cadastrar">Cadastrar</button>
+    </form>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            color: #fff;
+            height: 100vh;
+            background-color: #000;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        form{
+            width: 350px;
+            height: 390px;
+            padding: 20px;            
+            background-color: #777;
+            border-radius: 10px;
+
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            text-align: center;
+            font-size: 22px;
+        }
+        input[type="file"]{
+            background-color: #1c1c1c;
+        }
+        input{
+            border: none;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #1c1c1c;
+        }
+        button{
+            margin-top: 20px;
+            border: none;
+            padding: 10px;
+            color: #fff;
+            border-radius: 15px;
+            background-color: #1c1c1c;
+
+            cursor: pointer;
+        }
+        .tema button{
+            height: 50px;
+            width: 50px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+
+            opacity: .6;
+            cursor: pointer;
+            transition: .9s;
+        }
+        .tema button:hover{
+            opacity: 1;
+            font-size: 1.05em;
+        }
+
+    </style>
+
+</body>
+</html>
