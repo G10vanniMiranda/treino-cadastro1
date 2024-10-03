@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Array</title>
+</head>
+<body>
+
+    <form>
+        <h1>Seja bem vindo</h1>
+        <input type="text" placeholder="User, ou e-mail" id="email">
+        <input type="password" placeholder="senha" id="senha">
+        <button type="button" onclick="validar()">Entrar</button>
+        <h3 id="sucesso"></h3>
+        <h3 id="error"></h3>
+    </form>
+
+    <style>
+        *{ /* Reset */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding-top: 50px; /* Empurra os elementos em Coluna, pra cima ou pra baixo */
+            
+            display: flex; /* Os elementos ficam flexivel */
+            align-items: center; /* Centraliza os elementos no eixo transversal */
+            justify-content: center; /* Centraliza os elementos */
+
+            color: #fff; /* Cor da fonte */
+            background-color: #1c1c1c; /* Cor de fundo */
+        }
+        #sucesso{
+            margin-top: 10px; /* Espaço a cima do elemento */
+            display: none; /* Ocuta o elemento */
+            padding: 20px; /* Espaçamento interno */
+            color: #fff; /* Cor do elemento */
+            background-color: green; /* Cor de fundo do elemento */
+            width: 300px; /* Largura do elemento */
+            border-radius: 7px; /* Arredondamento das borda do elemento */
+        }
+        #error{
+            margin-top: 10px; /* Espaço a cima do elemento */
+            display: none; /* Ocuta o elemento */
+            padding: 20px; /* Espaçamento interno */
+            color: #fff; /* Cor do elemento */
+            background-color: green; /* Cor de fundo do elemento */
+            width: 300px; /* Largura do elemento */
+            border-radius: 7px; /* Arredondamento das borda do elemento */
+        }
+    </style>
+
+    <script>
+        const users = [
+            {
+                "id": 1,
+                "username": "user1",
+                "email": "user1@gmail.com",
+                "password": "123"
+            },
+            {
+                "id": 2,
+                "username": "user2",
+                "email": "user2@gmail.com",
+                "password": "123"
+            },
+            {
+                "id": 3,
+                "username": "user3",
+                "email": "user3@gmail.com",
+                "password": "123"
+            }
+        ];        
+
+        const userName = document.querySelector('#emil')
+    </script>
+    
+</body>
+</html>
