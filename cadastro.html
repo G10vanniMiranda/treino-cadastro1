@@ -75,6 +75,37 @@
         ];        
 
         const userName = document.querySelector('#emil')
+        const userPassword = document.querySelector('#senha')
+        const retorno = document.querySelector('#retorno')
+
+        function validar() {
+            userValido     = userName.value.toLowerCase().trim()
+            PasswordValido = userPassword.value.toLowerCase().trim()
+
+                const user = users.find(
+                    item => item.username == userValido
+                    &&
+                    item.password == PasswordValido
+                )
+                if(!user){
+                    error.style.display = "Flex"
+                    sucesso.style.display = "none"
+                    console.log('Usuario ou senha incorretos');
+                    error.textContent = 'Usuario ou senha'
+                    return false;
+                } else {
+                    console.log('Login bem-sucedido!')
+                    error.style.display = "none"
+                    sucesso.style.display = "flex"
+                    sucesso.textContent = 'Login bem sucedido'
+
+                    confirm('Redirecionando ...', )
+
+                    setTimeout( () => {
+                        window.location.href = "https://www.google.com.br"
+                    }, 2000)
+                }
+        }
     </script>
     
 </body>
